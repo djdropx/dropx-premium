@@ -4,64 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DJ DROPX Remixes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Montserrat&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0d0d0d;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
       color: #fff;
       margin: 0;
       padding: 0;
     }
     header {
-      background: #1a1a1a;
-      padding: 20px;
+      background: #111;
+      padding: 0;
       text-align: center;
+      border-bottom: 2px solid #ff0055;
+    }
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      display: block;
     }
     h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
       color: #ff0055;
+      letter-spacing: 1px;
+    }
+    .socials {
+      margin-bottom: 20px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #ffcc00;
     }
     .container {
-      padding: 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
     .track {
-      background: #1f1f1f;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(255,0,85,0.2);
+      background: #222;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(255, 0, 85, 0.2);
+      transition: transform 0.2s ease-in-out;
+    }
+    .track:hover {
+      transform: scale(1.02);
     }
     .track h2 {
       margin-top: 0;
       color: #ffcc00;
+      font-size: 1.4rem;
     }
     .audio-player {
       width: 100%;
       margin-top: 10px;
+      border-radius: 8px;
     }
     .download {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
+      margin-top: 15px;
+      padding: 10px 25px;
       background: #ff0055;
       color: #fff;
-      border-radius: 5px;
+      border: none;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .download:hover {
+      background: #e6004c;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 0.9rem;
-      color: #aaa;
+      color: #bbb;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>DJ DROPX Official Remix Downloads</h1>
+    <img src="https://i.imgur.com/xAasOqR.jpg" alt="DJ DROPX Banner" class="banner">
+    <h1>DJ DROPX Official Remixes</h1>
+    <div class="socials">
+      <a href="https://instagram.com/djdropx" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@djdropx" target="_blank">YouTube</a>
+      <a href="https://soundcloud.com/djdropx" target="_blank">SoundCloud</a>
+    </div>
   </header>
   <div class="container">
     <div class="track">
@@ -73,7 +118,6 @@
       <a href="https://boostellar.com/st/angrejibeat-dropx" class="download" target="_blank">Download via Boostellar</a>
     </div>
 
-    <!-- Add more tracks below like this -->
     <div class="track">
       <h2>It's Rocking (Extended Mix)</h2>
       <audio class="audio-player" controls>
@@ -84,7 +128,8 @@
     </div>
   </div>
   <footer>
-    &copy; 2025 DJ DROPX | All rights reserved.
+    &copy; 2025 DJ DROPX | Designed with 🔥 for club heads worldwide.
   </footer>
 </body>
 </html>
+
